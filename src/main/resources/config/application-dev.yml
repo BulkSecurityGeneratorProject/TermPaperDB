@@ -29,7 +29,6 @@ spring:
     devtools:
         restart:
             enabled: true
-            additional-exclude: .h2.server.properties
         livereload:
             enabled: false # we use Webpack dev server + BrowserSync for livereload
     jackson:
@@ -37,14 +36,8 @@ spring:
             indent-output: true
     datasource:
         type: com.zaxxer.hikari.HikariDataSource
-        url: jdbc:h2:file:./target/h2db/db/project;DB_CLOSE_DELAY=-1
-        username: project
-        password:
         hikari:
             auto-commit: false
-    h2:
-        console:
-            enabled: false
     jpa:
         database-platform: io.github.jhipster.domain.util.FixedH2Dialect
         database: H2
