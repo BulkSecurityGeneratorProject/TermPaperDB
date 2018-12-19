@@ -14,7 +14,7 @@
         "enableHibernateCache": true,
         "websocket": false,
         "databaseType": "sql",
-        "devDatabaseType": "postgres",
+        "devDatabaseType": "postgresql",
         "prodDatabaseType": "postgresql",
         "searchEngine": false,
         "messageBroker": false,
